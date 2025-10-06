@@ -1,4 +1,3 @@
-#![allow(unused)]
 use std::time::{SystemTime, UNIX_EPOCH};
 
 #[allow(dead_code)]

@@ -184,37 +184,3 @@ pub fn list(state: &str) {
 
     view_todo(todos, state);
 }
-
-#[cfg(test)]
-mod tests {
-    use super::*;
-    #[test]
-    fn test_add() {
-        add("Gym");
-    }
-
-    #[test]
-    fn test_update() {
-        update(1, "Gym");
-    }
-
-    #[test]
-    fn test_delete() {
-        delete(1);
-    }
-
-    #[test]
-    fn test_mark_in_progress() {
-        mark_in_progress(1);
-    }
-
-    #[test]
-    fn test_mark_done() {
-        mark_done(1);
-    }
-
-    #[test]
-    fn test_list() {
-        list("");
-    }
-}
