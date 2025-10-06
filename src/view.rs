@@ -48,6 +48,21 @@ pub fn view_todo(todos: Vec<Todo>, state: &str) {
                 i.update_at
             );
             println!("{row}");
+        } else if state == "in-progress" {
+            if i.status == "In Progress" {
+                let row = format!(
+                    "{}  | {}{} | {}{} | {} | {}",
+                    i.id,
+                    i.description,
+                    " ".repeat(max_len_description - i.description.len() + 11),
+                    i.status,
+                    " ".repeat(max_len_status - i.status.len()),
+                    i.created_at,
+                    i.update_at
+                );
+
+                println!("{row}");
+            }
         } else if state == "" {
             let row = format!(
                 "{}  | {}{} | {}{} | {} | {}",
