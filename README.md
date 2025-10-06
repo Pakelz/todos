@@ -44,25 +44,31 @@ You can run the CLI directly from there or add it to your PATH.
 ---
 
 ## 🚀 Usage
-# Adding a new task
-todos add "Buy groceries"
-# Output: Task added successfully (ID: 1)
 
-# Updating and deleting tasks
+Adding a new task
+```bash
+todos add "Buy groceries"
+```
+
+Updating and deleting tasks
+```bash
 todos update 1 "Buy groceries and cook dinner"
 todos delete 1
+```
 
-# Marking a task as in progress or done
+Marking a task as in progress or done
+```bash
 todos mark-in-progress 1
 todos mark-done 1
+```
 
-# Listing all tasks
-todos list
-
-# Listing tasks by status
-todos list done
-todos list todo
-todos list in-progress
+Listing tasks by status
+```bash
+todos list              ## List All Task
+todos list done         ## List Done Task
+todos list todo         ## List Todo Task
+todos list in-progress  ## Lust In Progress Task
+```
 
 ---
 
